@@ -10,7 +10,7 @@ by adding `ex_wagtail_content_client` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:ex_wagtail_content_client, "~> 0.1.0"}
+    {:ex_wagtail_content_client, "~> 0.1.0"},
   ]
 end
 ```
