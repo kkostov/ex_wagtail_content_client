@@ -2,7 +2,7 @@ defmodule ExWagtailContentClient.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/kkostov/ex_wagtail_content_client"
-  @version "0.1.0"
+  @version "0.2.0"
 
   def project do
     [
@@ -37,7 +37,7 @@ defmodule ExWagtailContentClient.MixProject do
   end
 
   defp description() do
-    "Client library for consuming the [Wagtail content API](https://docs.wagtail.org/en/stable/advanced_topics/api/v2/usage.html)"
+    "Client library for consuming the Wagtail CMS content API"
   end
 
   defp package() do

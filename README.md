@@ -15,9 +15,35 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/ex_wagtail_content_client>.
+## Usage
+
+The library is a simple REST API client fo the default Wagtail Content API. It's intended for accessing content based on the `/v2/pages`, `/v2/images` and `/v2/documents` endpoints.
+
+There are two key methods to consider.
+
+### Listing collections
+
+Use the `list` method to list the contents of a collection:
+
+```elixir
+{:ok, items, meta, info} = ExWagtailContentClient.list :pages, base_url: "https://iamkonstantin.eu"
+```
+
+The returned items are:
+
+- `items` - a list of the JSON objects returned by the Wagtail API (the nested `items` field from the raw response).
+
+- `meta` - the JSON meta object returned bu the Wagtail API.
+
+- `info` - a map created by the library to include pagination information like the total number of items and helpers for the next and previous query.
+
+### Get detail of a resource
+
+Individual items can be retrieved by their `detail_url`:
+
+```elixir
+{:ok, content} = ExWagtailContentClient.detail "https://iamkonstantin.eu/api/v2/pages/45/"
+```
 
 ## License
 
