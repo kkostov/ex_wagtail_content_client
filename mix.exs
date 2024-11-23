@@ -8,7 +8,8 @@ defmodule ExWagtailContentClient.MixProject do
       elixir: "~> 1.17",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      package: package()
+      package: package(),
+      source_url: "https://github.com/kkostov/ex_wagtail_content_client"
     ]
   end
 
@@ -31,7 +32,8 @@ defmodule ExWagtailContentClient.MixProject do
 
   defp package() do
     [
-      licenses: ["Apache-2.0"]
+      licenses: ["Apache-2.0"],
+      links: %{"GitHub" => "https://github.com/kkostov/ex_wagtail_content_client"}
     ]
   end
 end
