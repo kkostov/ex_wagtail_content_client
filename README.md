@@ -45,9 +45,11 @@ Individual items can be retrieved by their `detail_url`:
 {:ok, content} = ExWagtailContentClient.detail "https://iamkonstantin.eu/api/v2/pages/45/"
 ```
 
+By default, the content of all `paragraph` blocks in the `body` field of the resource (if available) will be sanitized and stripped of all but basic html tags so that it's suitable for rendering in a webpage. [You can configure](https://hexdocs.pm/ex_wagtail_content_client/ExWagtailContentClient.html#detail/2) which fields and blocks are sanitized.
+
 ## License
 
-Copyright [2024] [Konstantin <hi@iamkonstantin.eu>]
+Copyright 2024 Konstantin hi@iamkonstantin.eu
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
