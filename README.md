@@ -1,4 +1,4 @@
-# ExWagtailContentClient
+# ExWagtailContentClient ![Hex.pm Version](https://img.shields.io/hexpm/v/ex_wagtail_content_client) [![Hex Docs](https://img.shields.io/badge/docs-hexpm-blue.svg)](https://hexdocs.pm/ex_wagtail_content_client/) [![CI](https://github.com/kkostov/ex_wagtail_content_client/actions/workflows/ci.yml/badge.svg)](https://github.com/kkostov/ex_wagtail_content_client/actions/workflows/ci.yml)
 
 Elixir library for consuming the [Wagtail content API](https://docs.wagtail.org/en/stable/advanced_topics/api/v2/usage.html)
 
